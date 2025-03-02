@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Vehículo | MotorsGP</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px 40px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            color: #9d9d9d;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            transition: all 0.3s;
+            border-radius: 50px;
+        }
+
+        .nav-links a:hover {
+            color: #9d9d9d;
+        }
+
+        main {
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        .vehicle-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .vehicle-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .vehicle-details {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .vehicle-details h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .vehicle-details p {
+            margin-bottom: 10px;
+        }
+
+        .specs {
+            margin-top: 20px;
+        }
+
+        .specs ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .specs ul li {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff4500;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .buy-button:hover {
+            background: #e03e00;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">MotorsGP</a></h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Ver vehículos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="vehicle-container">
+            <div class="vehicle-image">
+                <img src="assets/bmw-x-series-x3m50i-xdrive-c1.png" alt="BMW iX">
+            </div>
+            <div class="vehicle-details">
+                <h2>BMW iX</h2>
+                <p><strong>Tipo:</strong> Eléctrico</p>
+                <p><strong>Precio:</strong> Desde <strong>87.850€</strong></p>
+                <p>El BMW iX es un SUV eléctrico de última generación con diseño innovador, autonomía excepcional y tecnología avanzada.</p>
+            </div>
+            <div class="specs">
+                <h3>Especificaciones</h3>
+                <ul>
+                    <li><strong>Autonomía:</strong> 450 km</li>
+                    <li><strong>Potencia:</strong> 523 CV</li>
+                    <li><strong>Aceleración 0-100 km/h:</strong> 4.6 segundos</li>
+                    <li><strong>Capacidad de batería:</strong> 105 kWh</li>
+                </ul>
+            </div>
+            <a href="contacto.html" class="buy-button">Solicitar información</a>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MotorsGP. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

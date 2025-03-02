@@ -1,0 +1,8 @@
+.about {
+    background-color: #000000;
+    color: #e0e0e0;
+    height: 100vh;
+    z-index: 1000;
+    position: relative;
+    min-height: 100vh;
+}

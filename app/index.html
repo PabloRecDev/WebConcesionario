@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOTORSGP | Concesionario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Estilos generales */
+      @import url("https://fonts.cdnfonts.com/css/azoft-sans");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #0d0d0d;
+        color: #e0e0e0;
+        line-height: 1.6;
+        position: relative;
+        min-height: 100vh;
+      }
+
+      /* Fondo de la landing page */
+      .landing-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: url(assets/P90548594-the-all-new-bmw-m4-cs-05-2024-2250px.jpg) no-repeat center center/cover;
+        filter: brightness(40%);
+        z-index: -1;
+      }
+
+      header {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px 40px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 a {
+        font-family: "Azoft Sans", sans-serif;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: #9d9d9d;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 12px 18px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        border-radius: 50px;
+      }
+
+      nav ul li a:hover {
+        color: #9d9d9d;
+      }
+
+      /* Landing Page */
+      .landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        position: relative;
+        z-index: 2;
+        padding: 20px;
+      }
+
+      .landing-content {
+        max-width: 800px;
+      }
+
+      .landing-content .btn {
+        background-color: #ffffff;
+        color: #000000;
+        text-decoration: none;
+        width: 100px;
+        border: 2px solid #000000;
+        padding: 12px 18px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        border-radius: 50px;
+      }
+
+      .landing-content .btn:hover {
+        border: 2px solid #ffffff;
+        transform: scale(1.05);
+      }
+
+      .landing h2 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      }
+
+      .landing h2 span {
+        font-family: "Azoft Sans", sans-serif;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: #9d9d9d;
+      }
+
+      .landing p {
+        font-size: 20px;
+        color: #b3b3b3;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      }
+
+      .about {
+        background-color: #000000;
+        text-align: center;
+        color: #9d9d9d;
+        height: 600px;
+        z-index: 1000;
+      }
+
+      .about h2 {
+        font-family: "Azoft Sans", sans-serif;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      .about-content {
+        padding: 50px;
+      }
+
+      .pre-gallery {
+        height: 500px;
+        /* Ajusta la altura según necesites */
+        display: flex;
+        align-items: center;
+        background: url(assets/g81_cs_promotional-teaser_dsk_fb-1.webp)
+          no-repeat center center/cover;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+      }
+
+      .pre-gallery h2 {
+        font-family: "Azoft Sans", sans-serif;
+        font-weight: bold;
+        margin-left: 3rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: #ffffff;
+      }
+      .vehicle-list {
+        display: grid;
+        background-color: #ffffff;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+      .vehicle-card {
+        background: #ffffff;
+        color: #000000;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      .vehicle-card img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+      }
+      .vehicle-card img:hover {
+        transform: scale(1.1);
+      }
+
+      .vehicle-info {
+        padding: 15px;
+      }
+
+      .electric-icon {
+        font-size: 24px;
+        color: blue;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+      .price {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .new-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #333;
+        color: white;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+      }
+      .view-all-btn-container {
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+      }
+      .view-all-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #ffffff;
+        color: #000000;
+        border: 2px solid #000000;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .view-all-btn:hover {
+        background-color: #0065e0;
+        border: 2px solid #ffffff;
+        transform: scale(1.05);
+      }
+      footer {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+
+        width: 100%;
+        bottom: 0;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-links li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+      }
+      /* Ocultar elementos al inicio */
+      .hidden {
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s ease-out forwards;
+      }
+
+      /* Animación de aparición */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Aplicar efecto en cascada con :nth-child */
+      .hidden:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+      .menu-toggle {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+      }
+
+      @media screen and (max-width: 768px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          background: rgba(0, 0, 0, 0.9);
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        .nav-links li {
+          padding: 10px 0;
+        }
+
+        .menu-toggle {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="landing-background"></div>
+    <!-- Fondo de la landing -->
+
+    <header>
+      <h1><a href="index.html">MotorsGP</a></h1>
+      <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Ver vehículos</a></li>
+          <li><a href="menu.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="landing hidden">
+        <div class="landing-content">
+          <h2>Bienvenido a <span>MotorsGP</span></h2>
+          <p>Descubre nuestros nuevos modelos de vehículos para el 2026.</p>
+          <a class="btn" href="menu.html">Ver más</a>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-content">
+          <h2>Sobre nosotros</h2>
+          <p>
+            Bienvenido a MOTORSGP, donde la pasión por los coches, la innovación
+            <br />
+            y la calidad se unen para ofrecer soluciones excepcionales en el
+            mundo automotriz. <br />
+            Desde nuestra fundación, nos hemos dedicado a transformar la
+            experiencia de <br />
+            conducción, brindando vehículos y servicios que marcan la
+            diferencia. <br />
+
+            Nuestro equipo está compuesto por expertos en la industria
+            automotriz, <br />
+            apasionados y comprometidos con la excelencia. Creemos en la
+            tecnología, <br />
+            el diseño y la satisfacción del cliente como pilares fundamentales
+            para el éxito. <br />
+
+            En [Nombre de tu empresa], nos esforzamos por mantener altos
+            estándares de calidad, <br />
+            innovar constantemente y generar un impacto positivo en la
+            movilidad. Cada vehículo y <br />
+            servicio que ofrecemos es una oportunidad para mejorar la
+            experiencia de nuestros clientes <br />
+            y reafirmar nuestra visión de un futuro automotriz sostenible y
+            eficiente. <br />
+
+            **Nuestra Misión:** Proveer soluciones automotrices innovadoras que
+            superen <br />
+            las expectativas de nuestros clientes.
+
+            <br />
+            **Nuestra Visión:** Ser referentes en la industria automotriz,
+            impulsando la evolución <br />
+            de la movilidad. **Nuestros Valores:** Calidad, compromiso,
+            tecnología y pasión por los coches. <br />
+
+            Gracias por confiar en nosotros. Estamos aquí para ayudarte a
+            encontrar el <br />
+            vehículo perfecto y vivir una experiencia de conducción inigualable.
+          </p>
+        </div>
+      </section>
+      <section class="pre-gallery">
+        <h2>Destacados</h2>
+      </section>
+      <section class="vehicle-list">
+        <div class="vehicle-card">
+          <span class="new-badge">Nuevo</span>
+          <img src="assets/bmw-x-series-x3m50i-xdrive-c1.png" alt="BMW iX" />
+          <div class="vehicle-info">
+            <h3>BMW iX</h3>
+            <p>Eléctrico</p>
+            <p class="price">Desde <strong>87.850€</strong></p>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <span class="new-badge">Nuevo</span>
+          <img src="assets/cosySec.webp" alt="BMW i7 M70 xDrive" />
+          <div class="vehicle-info">
+            <h3>BMW i7 M70 xDrive</h3>
+            <p>Eléctrico</p>
+            <p class="price">Desde <strong>187.200€</strong></p>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <img
+            src="assets/bmw-m-series-m3-cs-touring-ssv.png"
+            alt="BMW i5 Berlina"
+          />
+          <div class="vehicle-info">
+            <h3>BMW M3 cs Touring </h3>
+            <p>Eléctrico</p>
+            <p class="price">Desde <strong>77.000€</strong></p>
+          </div>
+        </div>
+      </section>
+      <div class="view-all-btn-container">
+        <button class="view-all-btn" onclick="location.href='menu.html'">
+          Ver todos los vehículos
+        </button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 MotorsGP. Todos los derechos reservados.</p>
+        <ul class="footer-links">
+          <li><a href="privacidad.html">Política de Privacidad</a></li>
+          <li><a href="terminos.html">Términos y Condiciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        var nav = document.querySelector(".nav-links");
+        nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+  </body>
+</html>
