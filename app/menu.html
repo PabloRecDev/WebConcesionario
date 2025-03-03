@@ -137,7 +137,15 @@
             border-radius: 5px;
             text-transform: uppercase;
         }
-
+        .view-details {
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .view-details:hover {
+            color: #4d4d4d;
+        }
         footer {
             background-color: #111;
             color: white;
@@ -159,6 +167,19 @@
         .footer-links a {
             color: white;
             text-decoration: none;
+        }
+        @media screen and (max-width: 768px) {
+          header h1{
+
+
+            font-size: 20px;
+          }
+          .nav-links{
+            display: flex;
+            align-items: right;
+            font-size: 12px;
+          }
+
         }
     </style>
     <body>
@@ -183,7 +204,7 @@
                       <h3>BMW iX</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>87.850€</strong></p>
-                      <a href="vehiculo.html?id=1">Ver detalles</a>
+                      <a href="vehiculo.html?id=bmw-ix" class="view-details">Ver detalles</a>
                     </div>
                   </div>
           
@@ -194,6 +215,7 @@
                       <h3>BMW X4 M xDrive</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>187.200€</strong></p>
+                      <a href="vehiculo.html#bmw-X4" class="view-details">Ver detalles</a>
                     </div>
                   </div>
           
@@ -206,6 +228,7 @@
                       <h3>BMW M8 Competition Gran Coupé</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>77.000€</strong></p>
+                      <a href="vehiculo.html#BMW-M8" class="view-details">Ver detalles</a>
                     </div>
                   </div>
                   <div class="vehicle-card">
@@ -217,6 +240,7 @@
                       <h3>MINI COOPER</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>77.000€</strong></p>
+                      <a href="vehiculo.html#MINI-COOPER" class="view-details">Ver detalles</a>
                     </div>
                   </div>
                   <div class="vehicle-card">
@@ -229,6 +253,7 @@
                       <h3>Mercedes CLE</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>77.000€</strong></p>
+                      <a href="vehiculo.html#Mercedes-CLE" class="view-details">Ver detalles</a>
                     </div>
                   </div>
                   <div class="vehicle-card">
@@ -240,6 +265,7 @@
                       <h3>BMW X1</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>77.000€</strong></p>
+                      <a href="vehiculo.html#bmw-X1" class="view-details">Ver detalles</a>
                     </div>
                   </div>
                   <div class="vehicle-card">
@@ -251,6 +277,7 @@
                       <h3>BMW X2</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>77.000€</strong></p>
+                      <a href="vehiculo.html#bmw-X2" class="view-details">Ver detalles</a>
                     </div>
                   </div>
                   <div class="vehicle-card">
@@ -263,6 +290,7 @@
                       <h3>BMW M2</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>77.000€</strong></p>
+                      <a href="vehiculo.html#bmw-M2" class="view-details">Ver detalles</a>
                     </div>
                   </div>
                   <div class="vehicle-card">
@@ -274,6 +302,7 @@
                       <h3>BMW M3 cs Touring</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>77.000€</strong></p>
+                      <a href="vehiculo.html#bmw-M3" class="view-details">Ver detalles</a>
                     </div>
                   </div>
                   <div class="vehicle-card">
@@ -286,6 +315,7 @@
                       <h3>AUDI RS3</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>77.000€</strong></p>
+                      <a href="vehiculo.html#Audi-RS3" class="view-details" >Ver detalles</a>
                     </div>
                   </div>
             </section>

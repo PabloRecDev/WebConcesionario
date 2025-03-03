@@ -257,7 +257,7 @@
         border: 2px solid #000000;
         border-radius: 50px;
         cursor: pointer;
-        transition: 0.3s;
+        transition: transform 0.3 ease-in-out;
       }
 
       .view-all-btn:hover {
@@ -319,27 +319,20 @@
         cursor: pointer;
         color: white;
       }
-
       @media screen and (max-width: 768px) {
-        .nav-links {
-          display: none;
-          flex-direction: column;
-          background: rgba(0, 0, 0, 0.9);
-          position: absolute;
-          top: 60px;
-          left: 0;
-          width: 100%;
-          text-align: center;
-        }
+          header h1{
+            font-size: 20px;
+          }
+          .nav-links{
+            display: flex;
+            align-items: right;
+            font-size: 12px;
+          }
+          .about{
+            height: 100%;
+          }
 
-        .nav-links li {
-          padding: 10px 0;
         }
-
-        .menu-toggle {
-          display: block;
-        }
-      }
     </style>
   </head>
 
@@ -350,7 +343,6 @@
     <header>
       <h1><a href="index.html">MotorsGP</a></h1>
       <nav>
-        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="menu.html">Ver vehículos</a></li>
@@ -464,11 +456,5 @@
         </ul>
       </div>
     </footer>
-    <script>
-      function toggleMenu() {
-        var nav = document.querySelector(".nav-links");
-        nav.style.display = nav.style.display === "flex" ? "none" : "flex";
-      }
-    </script>
   </body>
 </html>
