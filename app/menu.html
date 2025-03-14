@@ -1,194 +1,17 @@
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="css/index.css">
+        <title>MOTORSGP | Menú</title>
+        <link rel="stylesheet" href="css/menu.css">
     </head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-         * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #ffffff;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-
-        header {
-        display: flex;
-        position: fixed;
-        width: 100%;
-        z-index: 10;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgba(0, 0, 0);
-        padding: 20px 40px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 a {
-            text-decoration: none;
-            color: #9d9d9d;
-        }
-        h1 {
-        font-family: "Azoft Sans", sans-serif;
-        margin-left: 2rem;
-        letter-spacing: 3px;
-        text-decoration: none;
-        color: #000000;
-        }
-        h2{
-            font-family: "Azoft Sans", sans-serif;
-            margin-left: 2rem;
-            letter-spacing: 3px;
-            text-decoration: none;
-            color: #9d9d9d;
-        }
-        h2 span{
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-size: 15px;
-            text-decoration: none;
-            color: #000000;
-        }
-        @media screen and (max-width: 768px) {
-            h1 {
-                text-align: center;
-            }
-            h2{
-                text-align: center;
-            }
-      }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 12px 18px;
-            transition: all 0.3s;
-            border-radius: 50px;
-        }
-
-        .nav-links a:hover {
-            color: #9d9d9d;
-        }
-        main {
-            padding-top: 120px;
-        }
-        .vehicle-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            padding-top: 100px;
-            background-color: white;
-        }
-
-        .vehicle-card {
-            background: #fff;
-            color: #000;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-            text-align: center;
-            padding-bottom: 10px;
-            transition: transform 0.3s;
-        }
-
-        .vehicle-card img {
-            width: 100%;
-            height: auto;
-            transition:transform 0.3s ease-in-out;
-        }
-
-        .vehicle-card img:hover {
-            transform: scale(1.1);
-        }
-
-        .vehicle-info {
-            padding: 15px;
-        }
-
-        .price {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .new-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #333;
-            color: white;
-            font-size: 12px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            text-transform: uppercase;
-        }
-        .view-details {
-            color: #000;
-            font-weight: bold;
-            font-size: 16px;
-            transition: all 0.3s;
-        }
-        .view-details:hover {
-            color: #4d4d4d;
-        }
-        footer {
-            background-color: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-links li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-        }
-        @media screen and (max-width: 768px) {
-          header h1{
-
-
-            font-size: 20px;
-          }
-          .nav-links{
-            display: flex;
-            align-items: right;
-            font-size: 12px;
-          }
-
-        }
-    </style>
     <body>
         <header>
             <h1><a href="index.html">MotorsGP</a></h1>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Volver al Inicio</a></li>
-                    <li><a href="menu.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -199,18 +22,18 @@
             <section class="vehicle-list">
                 <div class="vehicle-card">
                     <span class="new-badge">Nuevo</span>
-                    <img src="assets/bmw-x-series-x3m50i-xdrive-c1.png" alt="BMW iX" />
+                    <img src="public/bmw-x-series-x3m50i-xdrive-c1.png" alt="BMW iX" />
                     <div class="vehicle-info">
                       <h3>BMW iX</h3>
                       <p>Eléctrico</p>
                       <p class="price">Desde <strong>87.850€</strong></p>
-                      <a href="vehiculo.html?id=bmw-ix" class="view-details">Ver detalles</a>
+                      <a href="vehiculo.html#bmw-ix" class="view-details">Ver detalles</a>
                     </div>
                   </div>
           
                   <div class="vehicle-card">
                     <span class="new-badge">Nuevo</span>
-                    <img src="assets/cosySec.webp" alt="BMW i7 M70 xDrive" />
+                    <img src="public/cosySec.webp" alt="BMW i7 M70 xDrive" />
                     <div class="vehicle-info">
                       <h3>BMW X4 M xDrive</h3>
                       <p>Eléctrico</p>
@@ -221,7 +44,7 @@
           
                   <div class="vehicle-card">
                     <img
-                      src="assets/bmw-m8-competition-gran-coupe-modelfinder.png"
+                      src="public/bmw-m8-competition-gran-coupe-modelfinder.png"
                       alt="BMW i5 Berlina"
                     />
                     <div class="vehicle-info">
@@ -233,7 +56,7 @@
                   </div>
                   <div class="vehicle-card">
                     <img
-                      src="assets/24MF_C6B.png"
+                      src="public/24MF_C6B.png"
                       alt="BMW i5 Berlina"
                     />
                     <div class="vehicle-info">
@@ -246,7 +69,7 @@
                   <div class="vehicle-card">
                     <span class="new-badge">Nuevo</span>
                     <img
-                      src="assets/manufaktur_alpine_gray.webp"
+                      src="public/manufaktur_alpine_gray.webp"
                       alt="BMW i5 Berlina"
                     />
                     <div class="vehicle-info">
@@ -258,7 +81,7 @@
                   </div>
                   <div class="vehicle-card">
                     <img
-                      src="assets/X1oferta.png"
+                      src="public/X1oferta.png"
                       alt="BMW i5 Berlina"
                     />
                     <div class="vehicle-info">
@@ -270,7 +93,7 @@
                   </div>
                   <div class="vehicle-card">
                     <img
-                      src="assets/cosySec.png"
+                      src="public/cosySec.png"
                       alt="BMW i5 Berlina"
                     />
                     <div class="vehicle-info">
@@ -283,7 +106,7 @@
                   <div class="vehicle-card">
                     <span class="new-badge">Nuevo</span>
                     <img
-                      src="assets/bmw-m-series-m2-coupe-lci-modelfinder.png"
+                      src="public/bmw-m-series-m2-coupe-lci-modelfinder.png"
                       alt="BMW i5 Berlina"
                     />
                     <div class="vehicle-info">
@@ -295,7 +118,7 @@
                   </div>
                   <div class="vehicle-card">
                     <img
-                      src="assets/bmw-m-series-m3-cs-touring-ssv.png"
+                      src="public/bmw-m-series-m3-cs-touring-ssv.png"
                       alt="BMW i5 Berlina"
                     />
                     <div class="vehicle-info">
@@ -308,7 +131,7 @@
                   <div class="vehicle-card">
                     <span class="new-badge">Nuevo</span>
                     <img
-                      src="assets/Audi-RS3_4919.png"
+                      src="public/Audi-RS3_4919.png"
                       alt="BMW i5 Berlina"
                     />
                     <div class="vehicle-info">
@@ -323,11 +146,10 @@
         
         <footer>
             <div class="footer-content">
-                <p>&copy; 2024 MotorsGP. Todos los derechos reservados.</p>
+                <p>&copy; 2025 MotorsGP. Todos los derechos reservados.</p>
                 <ul class="footer-links">
-                    <li><a href="privacidad.html">Política de Privacidad</a></li>
-                    <li><a href="terminos.html">Términos y Condiciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="">Política de Privacidad</a></li>
+                    <li><a href="">Términos y Condiciones</a></li>
                 </ul>
             </div>
         </footer>

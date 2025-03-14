@@ -4,148 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles del Vehículo | MotorsGP</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title> MotorsGP | Detalles del Vehículo</title>
+    <link rel="stylesheet" href="css/vehiculo.css">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #ffffff;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px 40px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        header h1 a {
-            text-decoration: none;
-            color: #9d9d9d;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 12px 18px;
-            transition: all 0.3s;
-            border-radius: 50px;
-        }
-
-        .nav-links a:hover {
-            color: #9d9d9d;
-        }
-
-        main {
-            padding-top: 100px;
-            text-align: center;
-        }
-
-        .vehicle-container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            color: #000;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .vehicle-image img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .vehicle-details {
-            text-align: left;
-            margin-top: 20px;
-        }
-
-        .vehicle-details h2 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        .vehicle-details p {
-            margin-bottom: 10px;
-        }
-
-        .specs {
-            margin-top: 20px;
-        }
-
-        .specs ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-        }
-
-        .specs ul li {
-            background: #f4f4f4;
-            padding: 10px;
-            margin-bottom: 5px;
-            border-radius: 5px;
-        }
-
-        .buy-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #ffffff;
-            color: rgb(0, 0, 0);
-            font-size: 18px;
-            border: none;
-            border-radius: 50px;
-            border: 2px solid rgb(0, 0, 0);
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-            text-decoration: none;
-        }
-
-        .buy-button:hover {
-            background-color: #0065e0;
-            border: 2px solid #ffffff;
-            transform: scale(1.05);
-        }
-
-        footer {
-            background-color: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        @media screen and (max-width: 768px) {
-          header h1{
-            font-size: 20px;
-          }
-          .nav-links{
-            display: flex;
-            align-items: right;
-            font-size: 12px;
-          }
-
-        }
     </style>
 </head>
 
@@ -156,7 +18,6 @@
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="menu.html">Ver vehículos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -164,7 +25,7 @@
     <main>
         <div class="vehicle-container" id="bmw-ix">
             <div class="vehicle-image">
-                <img src="assets/bmw-x-series-x3m50i-xdrive-c1.png" alt="BMW iX">
+                <img src="public/bmw-x-series-x3m50i-xdrive-c1.png" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>BMW iX</h2>
@@ -186,7 +47,7 @@
         </div>
         <div class="vehicle-container" id="bmw-X4">
             <div class="vehicle-image">
-                <img src="assets/cosySec.webp" alt="BMW iX">
+                <img src="public/cosySec.webp" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>BMW X4 M xDrive</h2>
@@ -208,7 +69,7 @@
         </div>
         <div class="vehicle-container" id="BMW-M8">
             <div class="vehicle-image">
-                <img src="assets/bmw-m8-competition-gran-coupe-modelfinder.png" alt="BMW iX">
+                <img src="public/bmw-m8-competition-gran-coupe-modelfinder.png" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>BMW M8 Competition Gran Coupé</h2>
@@ -230,7 +91,7 @@
         </div>
         <div class="vehicle-container" id="MINI-COOPER">
             <div class="vehicle-image">
-                <img src="assets/24MF_C6B.png" alt="BMW iX">
+                <img src="public/24MF_C6B.png" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>MINI COOPER</h2>
@@ -252,7 +113,7 @@
         </div>
         <div class="vehicle-container" id="Mercedes-CLE">
             <div class="vehicle-image">
-                <img src="assets/manufaktur_alpine_gray.webp" alt="BMW iX">
+                <img src="public/manufaktur_alpine_gray.webp" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>Mercedes CLE</h2>
@@ -274,7 +135,7 @@
         </div>
         <div class="vehicle-container" id="bmw-X1">
             <div class="vehicle-image">
-                <img src="assets/X1oferta.png" alt="BMW iX">
+                <img src="public/X1oferta.png" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>BMW X1</h2>
@@ -296,7 +157,7 @@
         </div>
         <div class="vehicle-container" id="bmw-X2">
             <div class="vehicle-image">
-                <img src="assets/cosySec.png" alt="BMW iX">
+                <img src="public/cosySec.png" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>BMW X2</h2>
@@ -318,7 +179,7 @@
         </div>
         <div class="vehicle-container" id="bmw-M2">
             <div class="vehicle-image">
-                <img src="assets/bmw-m-series-m2-coupe-lci-modelfinder.png" alt="BMW iX">
+                <img src="public/bmw-m-series-m2-coupe-lci-modelfinder.png" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>BMW M2</h2>
@@ -340,7 +201,7 @@
         </div>
         <div class="vehicle-container" id="bmw-M3">
             <div class="vehicle-image">
-                <img src="assets/bmw-m-series-m3-cs-touring-ssv.png" alt="BMW iX">
+                <img src="public/bmw-m-series-m3-cs-touring-ssv.png" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>BMW M3 cs Touring</h2>
@@ -362,7 +223,7 @@
         </div>
         <div class="vehicle-container" id="Audi-RS3">
             <div class="vehicle-image">
-                <img src="assets/Audi-RS3_4919.png" alt="BMW iX">
+                <img src="public/Audi-RS3_4919.png" alt="BMW iX">
             </div>
             <div class="vehicle-details">
                 <h2>AUDI RS3</h2>
@@ -386,11 +247,10 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 MotorsGP. Todos los derechos reservados.</p>
+            <p>&copy; 2025 MotorsGP. Todos los derechos reservados.</p>
             <ul class="footer-links">
                 <li><a href="privacidad.html">Política de Privacidad</a></li>
                 <li><a href="terminos.html">Términos y Condiciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </footer>

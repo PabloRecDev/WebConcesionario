@@ -1,6 +1,13 @@
-      /* Estilos generales */
       @import url("https://fonts.cdnfonts.com/css/azoft-sans");
-
+      /*Root para tener un código mas eficiente y reutilizable*/
+      :root {
+        --primary-color: #9d9d9d;
+        --secondary-color: #fff;
+        --background-color: #0d0d0d;
+        --border-radius: 10px;
+        --logo-font: 'Azoft Sans', sans-serif;
+        --main-font: 'Poppins', sans-serif;
+      }
       * {
         box-sizing: border-box;
         margin: 0;
@@ -12,15 +19,26 @@
       }
 
       body {
-        font-family: "Poppins", sans-serif;
-        background-color: #0d0d0d;
-        color: #e0e0e0;
+        font-family: var(--main-font);
+        background-color: var(--background-color);
+        color: var(--secondary-color);
         line-height: 1.6;
         position: relative;
         min-height: 100vh;
       }
 
-
+      /* Fondo de la landing */
+      .landing-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: url(../public/P90548594-the-all-new-bmw-m4-cs-05-2024-2250px.jpg) no-repeat center center/cover;
+        filter: brightness(40%);
+        z-index: -1;
+      }
+      /*Header*/
       header {
         display: flex;
         position: fixed;
@@ -38,7 +56,7 @@
         font-weight: bold;
         letter-spacing: 3px;
         text-decoration: none;
-        color: #9d9d9d;
+        color: var(--primary-color);
       }
 
       nav ul {
@@ -48,7 +66,7 @@
       }
 
       nav ul li a {
-        color: #ffffff;
+        color: var(--secondary-color);
         text-decoration: none;
         padding: 12px 18px;
         font-weight: 500;
@@ -57,20 +75,119 @@
       }
 
       nav ul li a:hover {
-        color: #9d9d9d;
+        color: var(--primary-color);
       }
 
-      /* Landing Page */
+      /* Sección principal de la web */
+      .landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        position: relative;
+        z-index: 2;
+        padding: 20px;
+      }
+
+      .landing-content {
+        max-width: 800px;
+      }
+
+      .landing-content .btn {
+        background-color: var(--secondary-color);
+        color: #000;
+        text-decoration: none;
+        width: 100px;
+        border: 1px solid #444;
+        padding: 12px 18px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        border-radius: 50px;
+      }
+
+      .landing-content .btn:hover {
+        border: 1px solid #ffffff;
+        transform: scale(1.05);
+      }
+
+      .landing h2 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      }
+
+      .landing h2 span {
+        font-family: "Azoft Sans", sans-serif;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: var(--primary-color);
+      }
+
+      .landing p {
+        font-size: 20px;
+        color: #b3b3b3;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      }
+      /*Sección sobre nosotros*/
+      .about {
+        background-color: var(--background-color);
+        text-align: center;
+        color: var(--primary-color);
+        height: 650px;
+        z-index: 1000;
+      }
+
+      .about h2 {
+        font-family: var(--logo-font);
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: var(--secondary-color);
+      }
+
+      .about-content {
+        padding: 50px;
+        max-width: 80ch;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      /*Sección imagen presentación a los coches destacados de la web*/
+      .pre-gallery {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        background: url(../public/g81_cs_promotional-teaser_dsk_fb-1.webp) no-repeat center center/cover;
+        color: var(--secondary-color);
+        position: relative;
+        z-index: 1;
+      }
+
+      .pre-gallery h2 {
+        font-family: var(--logo-font);
+        font-weight: bold;
+        margin-left: 3rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: var(--secondary-color);
+      }
+      /*Sección de los vehiculos mas destacados de la web*/
       .vehicle-list {
         display: grid;
-        background-color: #ffffff;
+        background-color: var(--secondary-color);
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
         padding: 20px;
       }
+
       .vehicle-card {
-        background: #ffffff;
-        color: #000000;
+        background: var(--secondary-color);
+        color: var(--background-color);
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -78,11 +195,13 @@
         text-align: center;
         padding-bottom: 10px;
       }
+
       .vehicle-card img {
         width: 100%;
         height: auto;
         transition: transform 0.3s ease-in-out;
       }
+
       .vehicle-card img:hover {
         transform: scale(1.1);
       }
@@ -90,36 +209,53 @@
       .vehicle-info {
         padding: 15px;
       }
-
-      .electric-icon {
-        font-size: 24px;
-        color: blue;
-        display: inline-block;
-        margin-bottom: 5px;
-      }
-
+      /*Precio del vehículo*/
       .price {
         font-size: 18px;
         font-weight: bold;
       }
-
+      /*Etiqueta de vehiculo nuevo*/
       .new-badge {
         position: absolute;
         top: 10px;
         right: 10px;
         background: #333;
-        color: white;
+        color: var(--secondary-color);
         font-size: 12px;
         padding: 5px 10px;
         border-radius: 5px;
         text-transform: uppercase;
       }
+      /*Botón para ver todos los vehiculos*/
+      .view-all-btn-container {
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary-color);
+      }
+
+      .view-all-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: var(--secondary-color);
+        color: #000;
+        border: 1px solid #444;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+
+      .view-all-btn:hover {
+        background-color: #0065e0;
+        color: var(--secondary-color);
+      }
+      /* Sección footer*/
       footer {
         background-color: #111;
         color: white;
         text-align: center;
         padding: 20px;
-
         width: 100%;
         bottom: 0;
       }
@@ -138,4 +274,54 @@
         color: white;
         text-decoration: none;
       }
-      /* Ocultar elementos al inicio */
+
+      /* Ocultamos los elementos al principio para hacer la animación */
+      .hidden {
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s ease-out forwards;
+      }
+
+      /* Animación de aparición al cargar la página */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Aplicar efecto en cascada con :nth-child */
+      .hidden:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+
+      .menu-toggle {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: var(--secondary-color);
+      }
+      /* Responsive dispositivos mas pequeños*/
+      @media screen and (max-width: 768px) {
+        header h1 {
+          font-size: 12px;
+        }
+
+        .nav-links {
+          display: flex;
+          font-size: 10px;
+        }
+
+        .about {
+          height: 100%;
+        }
+        .about-content{
+          font-size: 12px;
+        }
+
+      }

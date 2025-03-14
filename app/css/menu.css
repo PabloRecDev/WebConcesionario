@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url("https://fonts.cdnfonts.com/css/azoft-sans");
+/*Root para tener un código mas eficiente y reutilizable*/
+:root {
+   --primary-color: #9d9d9d;
+   --secondary-color: #fff;
+   --background-color: #0d0d0d;
+   --border-radius: 10px;
+   --logo-font: 'Azoft Sans', sans-serif;
+   --main-font: 'Poppins', sans-serif;
+ }
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: var(--main-font);
+   background-color: var(--secondary-color);
+   color: #e0e0e0;
+   line-height: 1.6;
+}
+/*Sección Header*/
+header {
+display: flex;
+position: fixed;
+width: 100%;
+z-index: 10;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(0, 0, 0);
+padding: 20px 40px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 a {
+   font-family: var(--logo-font);
+   font-weight: bold;
+   letter-spacing: 3px;
+   text-decoration: none;
+   color: var(--primary-color);
+}
+main h1 {
+font-family: var(--logo-font);
+margin-left: 2rem;
+letter-spacing: 3px;
+text-decoration: none;
+color: #000000;
+}
+h2{
+   font-family: var(--logo-font);
+   margin-left: 2rem;
+   letter-spacing: 3px;
+   text-decoration: none;
+   color: var(--primary-color);
+}
+h2 span{
+   font-family: var(--main-font);
+   font-weight: 400;
+   font-size: 15px;
+   text-decoration: none;
+   color: #000000;
+}
+/*Para dispositivos mas pequeños centramos los textos encabezados para que 
+queden mas ordenados*/
+@media screen and (max-width: 768px) {
+   h1 {
+       text-align: center;
+   }
+   h2{
+       text-align: center;
+   }
+}
+
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 30px;
+}
+
+.nav-links a {
+   color: var(--secondary-color);
+   text-decoration: none;
+   padding: 12px 18px;
+   transition: all 0.3s;
+   border-radius: 50px;
+}
+
+.nav-links a:hover {
+   color: var(--primary-color);
+}
+main {
+   padding-top: 120px;
+}
+/*Sección con toda la lista de vehiculos*/
+.vehicle-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+   padding: 20px;
+   padding-top: 100px;
+   background-color: var(--secondary-color);
+}
+
+.vehicle-card {
+   background: var(--secondary-color);
+   color: #000;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   position: relative;
+   text-align: center;
+   padding-bottom: 10px;
+   transition: transform 0.3s;
+}
+
+.vehicle-card img {
+   width: 100%;
+   height: auto;
+   transition:transform 0.3s ease-in-out;
+}
+
+.vehicle-card img:hover {
+   transform: scale(1.1);
+}
+
+.vehicle-info {
+   padding: 15px;
+}
+
+.price {
+   font-size: 18px;
+   font-weight: bold;
+}
+/*Etiqueta de nuevo*/
+.new-badge {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background: #333;
+   color: var(--secondary-color);
+   font-size: 12px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   text-transform: uppercase;
+}
+.view-details {
+   color: #000;
+   font-weight: bold;
+   font-size: 16px;
+   transition: all 0.3s;
+}
+.view-details:hover {
+   color: #4d4d4d;
+}
+/*Sección footer*/
+footer {
+   background-color: #111;
+   color: var(--secondary-color);
+   text-align: center;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.footer-links {
+   list-style: none;
+   padding: 0;
+}
+
+.footer-links li {
+   display: inline;
+   margin: 0 10px;
+}
+
+.footer-links a {
+   color: var(--secondary-color);
+   text-decoration: none;
+}
+/*Header responsive*/
+@media screen and (max-width: 768px) {
+   header h1{
+     font-size: 12px;
+   }
+   .nav-links{
+     display: flex;
+     font-size: 10px;
+   }
+
+ }
