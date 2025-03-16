@@ -123,16 +123,14 @@ main {
     font-size: 18px;
     border: none;
     border-radius: 50px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid #444;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     text-decoration: none;
 }
 
 .buy-button:hover {
-    background-color: #0065e0;
-    border: 1px solid #ffffff;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 /*Seccion del footer*/
 footer {
